@@ -33,6 +33,43 @@ JOptionPane.showMessageDialog(null, "-Mensaje", "Titulo", -1;
 ```
 Este código se compone de parametros, cada parametros es separado por comas y va estructura con null,"Mensaje","Titulo",Numero(Icono)
 
+--Pedir Valor de una variable al usuario--
+```
+variable= Integer.parseInt(JOptionPane.showInputDialog(null, "Texto","Titulo",Numero));
+```
+--bucle while--
+```
+while(condicion){
+"instruccion a repetir"
+}
+```
+Este bucle lo utilizamos para que el usuario interactúe con las opciones del menu hasta que quiera salir con un numero determinado que es el "5"
+
+--condicional switch--
+```
+switch(variable) {
+case variable1:
+//intruccion
+break;
+default:
+//instruccion
+break;
+```
+Este sirve para que el usuario entre en las diferentes opciones del menu gracias a los casos "case", estos case se pueden hacer siguiendo la estructura segun lo requerido. Los break sirven para salirse de la condicional y el default para una condicion no declarada en los case
+
+--condicional if--
+```
+if(condicion){
+//Instruccion
+}
+else  {
+//Intruccion
+}
+```
+Utilizamos Este condicional dentro de uno de los case y su estructura se basa dentro de una condicion y para agregar mas condiciones se utilizaria el else if(condicion) antes de else
+
+
+
 ## Ejecutando las pruebas
 ```
 package proyectos;
@@ -109,19 +146,40 @@ break;
 
 ### Dividir en pruebas de principio a fin
 
-Explique qué prueban estas pruebas y por qué.
+Para cada tipo de caso se utilizo las siguientes formulas:
 
+--case 1 conversor de monedas--
 ```
-Give an example
+dolares=(pesos/4150);
+```
+ya que cada peso Colombiano equivale en dolares a 4150 es por ello que se lo divide
+
+--case 2 Promedio de notas--
+```
+promedio=(nota1+nota2+nota3)/3;
+```
+El promedio se saca con la suma de todas las notas y la division de la cantidad de las notas
+
+--case 3 Clasificacion de partidas--
+```
+totalPuntos=partidosGanados*3+partidosPerdidos*0+partidosEmpatados*1;
+```
+El total de puntos se sacan con la suma de partidos ganados,perdidos y empatados y el valor de estos son:
+Partidos ganados: 3, 
+ Partidos Perdidos: 0, 
+ Partidos Empatados: 1, 
+Es por ello que cada cantidad de partidos se multiplica son su corrrespondiente
+
+--case 4 Numero Par e Impar--
+
+Se utilizo el condicional if con 2 condiciones una para el 0 y el otro para un numero par y el else se lo tomo para los números que no cumplian con esta condicion, es decir, los numeros impares:
+```
+if(numero==0) y else if(numero%2==0)
 ```
 
-### Y pruebas de estilo de codificación.
+--case 5-- 
 
-Explique qué prueban estas pruebas y por qué.
-
-```
-Give an example
-```
+se lo utilizo para salir
 
 ## Construido con
 
